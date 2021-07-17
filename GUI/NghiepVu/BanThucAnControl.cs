@@ -121,5 +121,7 @@ namespace DoAn_ver5.GUI.NghiepVu
         {
             lstBanDoAn.Items.Remove(lstBanDoAn.SelectedItems[0]);
         }
+        
+        // nothing
     }
 }

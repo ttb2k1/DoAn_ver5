@@ -32,11 +32,6 @@ namespace DoAn_ver5.GUI
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -46,14 +41,11 @@ namespace DoAn_ver5.GUI
             this.label17 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.lblDangXuat = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.labelHoaDon = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -61,19 +53,26 @@ namespace DoAn_ver5.GUI
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.tabPage3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabPage3
@@ -109,64 +108,6 @@ namespace DoAn_ver5.GUI
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1320, 77);
             this.panel1.TabIndex = 0;
-            // 
-            // label14
-            // 
-            this.label14.Image = global::DoAn_ver5.Properties.Resources.thongtin;
-            this.label14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label14.Location = new System.Drawing.Point(753, 17);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(195, 49);
-            this.label14.TabIndex = 4;
-            this.label14.Text = "Thông tin rạp phim";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label13
-            // 
-            this.label13.Image = global::DoAn_ver5.Properties.Resources.setting;
-            this.label13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label13.Location = new System.Drawing.Point(600, 17);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(123, 49);
-            this.label13.TabIndex = 4;
-            this.label13.Text = "Quy định";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label12
-            // 
-            this.label12.Image = global::DoAn_ver5.Properties.Resources.TaiKhoan;
-            this.label12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label12.Location = new System.Drawing.Point(448, 17);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(126, 49);
-            this.label12.TabIndex = 3;
-            this.label12.Text = "Tài khoản";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label12.Click += new System.EventHandler(this.label12_Click);
-            // 
-            // label11
-            // 
-            this.label11.Image = global::DoAn_ver5.Properties.Resources.database;
-            this.label11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label11.Location = new System.Drawing.Point(260, 17);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(160, 49);
-            this.label11.TabIndex = 2;
-            this.label11.Text = "Kết nối CSDL";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label11.Click += new System.EventHandler(this.label11_Click);
-            // 
-            // label10
-            // 
-            this.label10.Image = global::DoAn_ver5.Properties.Resources.saoLuuPhucHoi1;
-            this.label10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label10.Location = new System.Drawing.Point(33, 17);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(180, 49);
-            this.label10.TabIndex = 2;
-            this.label10.Text = "Sao lưu phục hồi";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // tabPage2
             // 
@@ -264,62 +205,6 @@ namespace DoAn_ver5.GUI
             this.label8.TabIndex = 2;
             this.label8.Text = "Báo cáo doanh thu phim";
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::DoAn_ver5.Properties.Resources.baoCaoDoanhThu1;
-            this.pictureBox3.Location = new System.Drawing.Point(967, 13);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(65, 55);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 1;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::DoAn_ver5.Properties.Resources.baoCaoDoanhThu1;
-            this.pictureBox2.Location = new System.Drawing.Point(674, 13);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(65, 55);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::DoAn_ver5.Properties.Resources.baoCaoDoanhThu1;
-            this.pictureBox1.Location = new System.Drawing.Point(376, 13);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(65, 55);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // label7
-            // 
-            this.label7.Image = global::DoAn_ver5.Properties.Resources.banThucAn;
-            this.label7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label7.Location = new System.Drawing.Point(177, 13);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(148, 55);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Bán thức ăn";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label7.Click += new System.EventHandler(this.label7_Click);
-            // 
-            // label6
-            // 
-            this.label6.Image = global::DoAn_ver5.Properties.Resources.banVe;
-            this.label6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label6.Location = new System.Drawing.Point(14, 13);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(114, 55);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Bán vé";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label6.Click += new System.EventHandler(this.label6_Click);
-            // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.panel4);
@@ -336,7 +221,7 @@ namespace DoAn_ver5.GUI
             // panel4
             // 
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel4.Location = new System.Drawing.Point(3, 80);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1320, 575);
@@ -358,6 +243,34 @@ namespace DoAn_ver5.GUI
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1320, 77);
             this.panel3.TabIndex = 0;
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl1.Location = new System.Drawing.Point(0, 0);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(1334, 691);
+            this.tabControl1.TabIndex = 0;
+            // 
+            // lblDangXuat
+            // 
+            this.lblDangXuat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblDangXuat.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.lblDangXuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDangXuat.Image = global::DoAn_ver5.Properties.Resources.logout;
+            this.lblDangXuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblDangXuat.Location = new System.Drawing.Point(1222, 3);
+            this.lblDangXuat.Name = "lblDangXuat";
+            this.lblDangXuat.Size = new System.Drawing.Size(106, 22);
+            this.lblDangXuat.TabIndex = 1;
+            this.lblDangXuat.Text = "Đăng xuất";
+            this.lblDangXuat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblDangXuat.Click += new System.EventHandler(this.label21_Click);
             // 
             // label19
             // 
@@ -443,38 +356,119 @@ namespace DoAn_ver5.GUI
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // tabControl1
+            // pictureBox3
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1334, 691);
-            this.tabControl1.TabIndex = 0;
+            this.pictureBox3.Image = global::DoAn_ver5.Properties.Resources.baoCaoDoanhThu1;
+            this.pictureBox3.Location = new System.Drawing.Point(967, 13);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(65, 55);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 1;
+            this.pictureBox3.TabStop = false;
             // 
-            // label20
+            // pictureBox2
             // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(1217, 10);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(41, 13);
-            this.label20.TabIndex = 1;
-            this.label20.Text = "label20";
+            this.pictureBox2.Image = global::DoAn_ver5.Properties.Resources.baoCaoDoanhThu1;
+            this.pictureBox2.Location = new System.Drawing.Point(674, 13);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(65, 55);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // label21
+            // pictureBox1
             // 
-            this.label21.AutoSize = true;
-            this.label21.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.label21.Location = new System.Drawing.Point(1264, 10);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(41, 13);
-            this.label21.TabIndex = 1;
-            this.label21.Text = "label20";
-            this.label21.Click += new System.EventHandler(this.label21_Click);
+            this.pictureBox1.Image = global::DoAn_ver5.Properties.Resources.baoCaoDoanhThu1;
+            this.pictureBox1.Location = new System.Drawing.Point(376, 13);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(65, 55);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // label7
+            // 
+            this.label7.Image = global::DoAn_ver5.Properties.Resources.banThucAn;
+            this.label7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label7.Location = new System.Drawing.Point(177, 13);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(148, 55);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Bán thức ăn";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // label6
+            // 
+            this.label6.Image = global::DoAn_ver5.Properties.Resources.banVe;
+            this.label6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label6.Location = new System.Drawing.Point(14, 13);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(114, 55);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Bán vé";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // label14
+            // 
+            this.label14.Image = global::DoAn_ver5.Properties.Resources.thongtin;
+            this.label14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label14.Location = new System.Drawing.Point(753, 17);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(195, 49);
+            this.label14.TabIndex = 4;
+            this.label14.Text = "Thông tin rạp phim";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label13
+            // 
+            this.label13.Image = global::DoAn_ver5.Properties.Resources.setting;
+            this.label13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label13.Location = new System.Drawing.Point(600, 17);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(123, 49);
+            this.label13.TabIndex = 4;
+            this.label13.Text = "Quy định";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label12
+            // 
+            this.label12.Image = global::DoAn_ver5.Properties.Resources.TaiKhoan;
+            this.label12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label12.Location = new System.Drawing.Point(448, 17);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(126, 49);
+            this.label12.TabIndex = 3;
+            this.label12.Text = "Tài khoản";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label12.Click += new System.EventHandler(this.label12_Click);
+            // 
+            // label11
+            // 
+            this.label11.Image = global::DoAn_ver5.Properties.Resources.database;
+            this.label11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label11.Location = new System.Drawing.Point(260, 17);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(160, 49);
+            this.label11.TabIndex = 2;
+            this.label11.Text = "Kết nối CSDL";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label11.Click += new System.EventHandler(this.label11_Click);
+            // 
+            // label10
+            // 
+            this.label10.Image = global::DoAn_ver5.Properties.Resources.saoLuuPhucHoi1;
+            this.label10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label10.Location = new System.Drawing.Point(33, 17);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(180, 49);
+            this.label10.TabIndex = 2;
+            this.label10.Text = "Sao lưu phục hồi";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // MainWorkSpace
             // 
@@ -482,8 +476,7 @@ namespace DoAn_ver5.GUI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuBar;
             this.ClientSize = new System.Drawing.Size(1334, 691);
-            this.Controls.Add(this.label21);
-            this.Controls.Add(this.label20);
+            this.Controls.Add(this.lblDangXuat);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "MainWorkSpace";
@@ -495,14 +488,13 @@ namespace DoAn_ver5.GUI
             this.tabPage2.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -541,7 +533,6 @@ namespace DoAn_ver5.GUI
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label labelHoaDon;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label lblDangXuat;
     }
 }

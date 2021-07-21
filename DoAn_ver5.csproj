@@ -373,5 +373,8 @@
   <ItemGroup>
     <None Include="Image\Ve.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Image\logout.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -203,10 +203,7 @@ namespace DoAn_ver5.GUI
                 DoanhThu_KhachHangControl.Instance.BringToFront();
         }
 
-        private void label10_Click(object sender, EventArgs e)
-        {
-            
-        }
+        
 
         private void label11_Click(object sender, EventArgs e)
         {
@@ -229,6 +226,12 @@ namespace DoAn_ver5.GUI
         private void label21_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Hello");
+        }
+
+        private void lblSaoLuuPhucHoi_Click(object sender, EventArgs e)
+        {
+            SaoLuuPhucHoi slph = new SaoLuuPhucHoi();
+            slph.Show();
         }
     }
 }

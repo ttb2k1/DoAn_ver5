@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\BLL_BackupAndRestore.cs" />
     <Compile Include="BLL\BLL_KhachHang.cs" />
     <Compile Include="BLL\BLL_Phim.cs" />
     <Compile Include="BLL\BLL_PhongChieu.cs" />
@@ -95,6 +96,12 @@
     </Compile>
     <Compile Include="GUI\HeThong\KetNoiCSDL.Designer.cs">
       <DependentUpon>KetNoiCSDL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\HeThong\SaoLuuPhucHoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\HeThong\SaoLuuPhucHoi.Designer.cs">
+      <DependentUpon>SaoLuuPhucHoi.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\HeThong\TaiKhoanControl.cs">
       <SubType>UserControl</SubType>
@@ -214,6 +221,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\HeThong\KetNoiCSDL.resx">
       <DependentUpon>KetNoiCSDL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\HeThong\SaoLuuPhucHoi.resx">
+      <DependentUpon>SaoLuuPhucHoi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\HeThong\TaiKhoanControl.resx">
       <DependentUpon>TaiKhoanControl.cs</DependentUpon>

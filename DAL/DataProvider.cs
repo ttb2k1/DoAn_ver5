@@ -86,5 +86,58 @@ namespace DoAn_ver5.DAL
             }
             return data;
         }
+
+        public bool Backup(string browse)
+        {
+            try
+            {
+                using (SqlConnection cnn = new SqlConnection(cnnStr))
+                {
+                    string database = cnn.Database.ToString();
+                    string q = "BACKUP DATABASE [" + database + "] TO DISK='" + browse + "\\" + "Database" + "-" + DateTime.Now.ToString("yyyy-MM-dd--HH-mm-ss") + ".bak'";
+                    SqlCommand scmd = new SqlCommand(q, cnn);
+                    cnn.Open();
+                    scmd.ExecuteNonQuery();
+                    cnn.Close();
+                    return true;
+                }
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public bool Restore(string browse)
+        {
+            try
+            {
+                using (SqlConnection cnn = new SqlConnection(cnnStr))
+                {
+                    cnn.Open();
+                    string database = cnn.Database.ToString();
+
+                    string sql1 = string.Format("ALTER DATABASE [" + database + "] SET SINGLE_USER WITH ROLLBACK IMMEDIATE");
+                    SqlCommand cmd1 = new SqlCommand(sql1, cnn);
+                    cmd1.ExecuteNonQuery();
+
+                    string sql2 = string.Format("USE MASTER RESTORE DATABASE [" + database + "] FROM DISK='" + browse + "' WITH REPLACE;");
+                    SqlCommand cmd2 = new SqlCommand(sql2, cnn);
+                    cmd2.ExecuteNonQuery();
+
+                    string sql3 = string.Format("ALTER DATABASE [" + database + "] SET MULTI_USER");
+                    SqlCommand cmd3 = new SqlCommand(sql3, cnn);
+                    cmd3.ExecuteNonQuery();
+
+                    cnn.Close();
+                    return true;
+                }
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
     }
 }

@@ -24,6 +24,7 @@ namespace DoAn_ver5.BLL
             }
             private set => _Instance = value;
         }
+
         public List<DTO_Ve> GetListVeBySuatChieu(string MaSuatChieu)
         {
             List<DTO_Ve> list = new List<DTO_Ve>();

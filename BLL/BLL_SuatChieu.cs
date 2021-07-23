@@ -45,5 +45,9 @@ namespace DoAn_ver5.BLL
         {
             return DAL_SuatChieu.Instance.GetDoanhThuByTimePeriod(TenPhim, TuNgay, DenNgay);
         }
+        public DataTable GetAllSuatChieu()
+        {
+            return DAL_SuatChieu.Instance.GetAllSuatChieu();
+        }
     }
 }

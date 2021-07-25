@@ -50,13 +50,13 @@ namespace DoAn_ver5.BLL
         {
             return DAL_KhachHang.Instance.GetAllKhachHang();
         }
-        public DataTable GetKHByTenKH(string TenKH)
-        {
-            return DAL_KhachHang.Instance.GetKhachHangByTenKH(TenKH);
-        }
-        public DataTable GetKHByCMND(string CMND)
-        {
-            return DAL_KhachHang.Instance.GetKhachHangByTCMND(CMND);
-        }
+        //public DataTable GetKHByTenKH(string TenKH)
+        //{
+        //    return DAL_KhachHang.Instance.GetKhachHangByTenKH(TenKH);
+        //}
+        //public DataTable GetKHByCMND(string CMND)
+        //{
+        //    return DAL_KhachHang.Instance.GetKhachHangByTCMND(CMND);
+        //}
     }
 }

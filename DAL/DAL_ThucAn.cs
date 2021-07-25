@@ -30,5 +30,35 @@ namespace DoAn_ver5.DAL
             dt = DataProvider.Instance.GetRecords(query);
             return dt;
         }
+        public DataTable GetThucAnByTenThucAn(String Ten)
+        {
+            DataTable dt = new DataTable();
+            string query = "select MaThucAn, TenThucAn, LoaiThucAn  from ThucAn where  TenThucAn = N'"+ Ten +"'";
+            dt = DataProvider.Instance.GetRecords(query);
+            return dt;
+        }
+        public DataTable GetGiaTAByTenThucAn(string Ten)
+        {
+            DataTable dt = new DataTable();
+            string query = "select SP.KichCo, SP.GiaBan from Size_Price SP join ThucAn TA on SP.MaThucAn = TA.MaThucAn where TA.TenThucAn " +
+                " = N'" + Ten + "'";
+            dt = DataProvider.Instance.GetRecords(query);
+            return dt;
+        }
+        public DataTable GetThucAnByLoaiThucAn(string Loai)
+        {
+            DataTable dt = new DataTable();
+            string query = "select MaThucAn, TenThucAn, LoaiThucAn from ThucAn where LoaiThucAn = N'" + Loai +"'";
+            dt = DataProvider.Instance.GetRecords(query);
+            return dt;
+        }
+        
+        public DataTable GetThucAn()
+        {
+            DataTable dt = new DataTable();
+            string query = "select MaThucAn, TenThucAn, LoaiThucAn from ThucAn ";
+            dt = DataProvider.Instance.GetRecords(query);
+            return dt;
+        }
     }
 }

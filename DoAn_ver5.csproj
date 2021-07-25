@@ -385,6 +385,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Image\logout.png" />
+    <EmbeddedResource Include="SQL\01_Create-Database.sql" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

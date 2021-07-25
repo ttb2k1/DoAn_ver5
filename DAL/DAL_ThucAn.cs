@@ -60,5 +60,35 @@ namespace DoAn_ver5.DAL
             dt = DataProvider.Instance.GetRecords(query);
             return dt;
         }
+        
+        public bool InsertThucAn(string MaThucAn, string LoaiThucAn, string TenThucAn)
+        {
+            try
+            {
+                string query = "insert into ThucAn values ('" + MaThucAn + "', N'"+ LoaiThucAn +"', N'"+ TenThucAn +"')";
+                DataProvider.Instance.ExcuteDB(query);
+                return true;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                return false;
+            }
+        }
+
+        public bool UpdateThucAn(string MaThucAn, string LoaiThucAn, string TenThucAn)
+        {
+            try
+            {
+                string query = "update ThucAn set LoaiThucAn = N'" + LoaiThucAn + "', TenThucAn = N'" + TenThucAn + "' where MaThucAn = '" + MaThucAn + "'";
+                DataProvider.Instance.ExcuteDB(query);
+                return true;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                return false;
+            }
+        }
     }
 }
